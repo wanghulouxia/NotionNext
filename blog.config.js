@@ -70,5 +70,7 @@ const BLOG = {
   // uuid重定向至 slug
   UUID_REDIRECT: process.env.UUID_REDIRECT || false
 }
-
+// 强制覆盖 Hexo 主题的封面显示设置
+BLOG.HEXO_POST_LIST_COVER = false;
+// BLOG.HEXO_HOME_BANNER_ENABLE = false; // 如果你想顺便把首页顶部的那个大图也关掉
 module.exports = BLOG
